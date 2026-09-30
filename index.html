@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuclear Energy Valley 3D</title>
+  
+  <link rel="stylesheet" href="./src/ui/styles.css">
+
+  <!-- Standalone build uses bundled Three from node_modules via Vite -->
+</head>
+<body>
+  <!-- 3D WebGL Canvas Container -->
+  <div id="canvas-container"></div>
+
+  <!-- Header Branding -->
+  <header>
+    <div class="brand-badge" id="header-brand-badge">⚛️ Nuclear Physics & Stability</div>
+    <h1 id="header-app-title">Nuclear Energy Valley 3D</h1>
+    <div class="subtitle" id="header-app-subtitle">
+      Specific binding energy (E_bind / A) and nuclear stability surface vs atomic number (Z) and mass number (A)
+    </div>
+
+    <!-- Quick Navigation / Quick Jump Bar -->
+    <nav id="nav-mode-bar" class="level-nav">
+      <div class="quick-jump-chips" style="border-left: none; margin-left: 0; padding-left: 0;">
+        <button class="btn-jump" data-target="fe56" id="chip-jump-fe56" title="Jump to deepest valley floor: 56-Fe">
+          <span>⛰️ ⁵⁶Fe</span>
+        </button>
+        <button class="btn-jump" data-target="ni62" id="chip-jump-ni62" title="Jump to highest specific binding energy: 62-Ni">
+          <span>⚓ ⁶²Ni</span>
+        </button>
+        <button class="btn-jump" data-target="h1" id="chip-jump-h1" title="Jump to unbound free proton (peak): 1-H">
+          <span>📍 ¹H</span>
+        </button>
+        <button class="btn-jump" data-target="u235" id="chip-jump-u235" title="Jump to fissile actinide: 235-U">
+          <span>☢️ ²³⁵U</span>
+        </button>
+      </div>
+
+      <!-- Language Switcher (EN / HU) -->
+      <div class="lang-switch-wrap">
+        <button class="lang-btn active" data-lang="en" id="btn-lang-en" title="English">EN</button>
+        <button class="lang-btn" data-lang="hu" id="btn-lang-hu" title="Magyar">HU</button>
+      </div>
+    </nav>
+    <div id="controls-hint" class="level-hint">
+      🎮 Controls: <b>Mouse drag</b> – orbit view | <b>Scroll</b> – zoom | <b>Arrow keys / WASD</b> – traverse space | <b>Click</b> – datasheet | <b>Shift + click</b> – drop atom
+    </div>
+  </header>
+
+  <div id="floating-pills" class="floating-pills-bar"></div>
+
+  <!-- Application Bootstrap -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

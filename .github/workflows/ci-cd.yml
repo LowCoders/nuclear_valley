@@ -1,0 +1,90 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    tags:
+      - 'v*'
+  pull_request:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    name: Build & Validate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci || npm install
+
+      - name: Verify Isotope Dataset
+        run: npm run build:data
+
+      - name: Build Application Bundle
+        run: npm run build
+
+      - name: Upload Production Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nuclear-valley-dist
+          path: dist/
+          retention-days: 7
+
+  deploy:
+    name: Deploy Application
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: nuclear-valley-dist
+          path: dist/
+
+      - name: Configure Environment from Secrets
+        run: |
+          if [ -n "${{ secrets.ENV_FILE }}" ]; then
+            echo "${{ secrets.ENV_FILE }}" > .env
+          elif [ -f .env.example ]; then
+            cp .env.example .env
+          fi
+
+      - name: Execute Deployment Script
+        env:
+          DEPLOY_METHOD: ${{ secrets.DEPLOY_METHOD || 'local' }}
+          DEPLOY_TARGET_DIR: ${{ secrets.DEPLOY_TARGET_DIR || 'dist' }}
+          DEPLOY_REMOTE_HOST: ${{ secrets.DEPLOY_REMOTE_HOST || '' }}
+          DEPLOY_REMOTE_USER: ${{ secrets.DEPLOY_REMOTE_USER || '' }}
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY || '' }}
+        run: |
+          chmod +x scripts/deploy.sh
+          bash scripts/deploy.sh

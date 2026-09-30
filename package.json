@@ -1,0 +1,19 @@
+{
+  "name": "nuclear-valley",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Nukleáris energiavölgy és stabilitási felület 3D WebGL vizualizáció",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:data": "node scripts/build-isotope-data.mjs",
+    "deploy": "bash scripts/deploy.sh"
+  },
+  "dependencies": {
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
