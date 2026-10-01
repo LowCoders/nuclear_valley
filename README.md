@@ -13,6 +13,14 @@ Interaktív, bejárható 3D WebGL / Three.js alkalmazás a nukleáris fajlagos k
 
 ---
 
+## 🌐 Live GitHub Pages Demo & Documentation / Élő Elérhetőség
+
+- ⚛️ **3D WebGL Application**: [https://lowcoders.github.io/nuclear_valley/app/](https://lowcoders.github.io/nuclear_valley/app/)
+- 📖 **Dokumentáció (Magyar)**: [https://lowcoders.github.io/nuclear_valley/](https://lowcoders.github.io/nuclear_valley/)
+- 📖 **Documentation (English)**: [https://lowcoders.github.io/nuclear_valley/en/](https://lowcoders.github.io/nuclear_valley/en/)
+
+---
+
 ## Documentation Index / Dokumentációk
 
 | Document | Language | Description |

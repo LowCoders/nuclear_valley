@@ -18,6 +18,17 @@ Ez a projekt egy valós idejű, bejárható 3D WebGL / Three.js szimuláció, am
 
 ---
 
+## 🚀 Elérhetőség a GitHub Pages-en
+
+Az alkalmazás és a dokumentáció hivatalos, publikált kiadása elérhető a GitHub Pages felületén:
+
+- 🌐 **Magyar nyelvű dokumentáció**: [https://lowcoders.github.io/nuclear_valley/](https://lowcoders.github.io/nuclear_valley/)
+- 🌐 **Angol nyelvű dokumentáció**: [https://lowcoders.github.io/nuclear_valley/en/](https://lowcoders.github.io/nuclear_valley/en/)
+- ⚛️ **Interaktív 3D WebGL alkalmazás**: [https://lowcoders.github.io/nuclear_valley/app/](https://lowcoders.github.io/nuclear_valley/app/)
+- 🐙 **GitHub forráskód tároló**: [https://github.com/LowCoders/nuclear_valley](https://github.com/LowCoders/nuclear_valley)
+
+---
+
 ## Mi az a Nukleáris Energiavölgy?
 
 A magerők vonzása miatt, amikor szabad protonokból és neutronokból atommag keletkezik, tetemes mennyiségű kötési energia szabadul fel ($E_\text{köt} > 0$). A magban kötött nukleonok átlagos energiája alacsonyabb, mint a szabad nukleonoké:

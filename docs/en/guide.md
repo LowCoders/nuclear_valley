@@ -1,6 +1,8 @@
 # User & Controls Guide
 
-**Nuclear Energy Valley 3D** is a fully interactive WebGL application running directly in your web browser. No plugins, installations, or external dependencies are needed.
+**Nuclear Energy Valley 3D** is a fully interactive WebGL application running directly in your web browser. No plugins, installations, or external dependencies are needed. It is hosted live on GitHub Pages:
+
+👉 **[Launch 3D Application (GitHub Pages)](https://lowcoders.github.io/nuclear_valley/app/)**
 
 ---
 

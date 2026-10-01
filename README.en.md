@@ -13,6 +13,14 @@ Inspired by the educational curriculum of [KisFiz Interactive Energy Valley](htt
 
 ---
 
+## 🌐 Live GitHub Pages Links
+
+- ⚛️ **Interactive 3D WebGL Simulator**: [https://lowcoders.github.io/nuclear_valley/app/](https://lowcoders.github.io/nuclear_valley/app/)
+- 📖 **English Documentation**: [https://lowcoders.github.io/nuclear_valley/en/](https://lowcoders.github.io/nuclear_valley/en/)
+- 📖 **Hungarian Documentation**: [https://lowcoders.github.io/nuclear_valley/](https://lowcoders.github.io/nuclear_valley/)
+
+---
+
 ## Table of Contents
 
 1. [Physical Concept & Mathematical Background](#physical-concept--mathematical-background)

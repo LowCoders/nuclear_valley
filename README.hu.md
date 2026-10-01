@@ -13,6 +13,14 @@ A projekt a [KisFiz Interaktív energiavölgy](https://kisfiz.hu/nuclear-physics
 
 ---
 
+## 🌐 Élő GitHub Pages Elérhetőség
+
+- ⚛️ **Interaktív 3D WebGL Szimulátor**: [https://lowcoders.github.io/nuclear_valley/app/](https://lowcoders.github.io/nuclear_valley/app/)
+- 📖 **Magyar nyelvű dokumentáció**: [https://lowcoders.github.io/nuclear_valley/](https://lowcoders.github.io/nuclear_valley/)
+- 📖 **Angol nyelvű dokumentáció**: [https://lowcoders.github.io/nuclear_valley/en/](https://lowcoders.github.io/nuclear_valley/en/)
+
+---
+
 ## Tartalomjegyzék
 
 1. [Fizikai Fogalmak és Matematikai Háttér](#fizikai-fogalmak-és-matematikai-háttér)

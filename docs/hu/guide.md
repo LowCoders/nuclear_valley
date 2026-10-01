@@ -1,6 +1,8 @@
 # Használati Útmutató
 
-A **Nukleáris Energiavölgy 3D** egy teljes mértékben interaktív, böngészőben futó WebGL alkalmazás. Nem igényel semmilyen külső beépülő modult vagy telepítést.
+A **Nukleáris Energiavölgy 3D** egy teljes mértékben interaktív, böngészőben futó WebGL alkalmazás. Nem igényel semmilyen külső beépülő modult vagy telepítést, közvetlenül elérhető online a GitHub Pages felületén:
+
+👉 **[3D Alkalmazás Indítása (GitHub Pages)](https://lowcoders.github.io/nuclear_valley/app/)**
 
 ---
 

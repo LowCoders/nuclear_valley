@@ -18,6 +18,17 @@ This project is an interactive, real-time 3D WebGL / Three.js simulation visuali
 
 ---
 
+## 🚀 Live on GitHub Pages
+
+The application and documentation are published and publicly accessible at the following URLs:
+
+- 🌐 **English Documentation**: [https://lowcoders.github.io/nuclear_valley/en/](https://lowcoders.github.io/nuclear_valley/en/)
+- 🌐 **Hungarian Documentation**: [https://lowcoders.github.io/nuclear_valley/](https://lowcoders.github.io/nuclear_valley/)
+- ⚛️ **Interactive 3D WebGL Simulator**: [https://lowcoders.github.io/nuclear_valley/app/](https://lowcoders.github.io/nuclear_valley/app/)
+- 🐙 **GitHub Source Repository**: [https://github.com/LowCoders/nuclear_valley](https://github.com/LowCoders/nuclear_valley)
+
+---
+
 ## What is the Nuclear Energy Valley?
 
 Due to the attractive nature of the strong nuclear force, binding free protons and neutrons into a nucleus releases substantial binding energy ($E_\text{bind} > 0$). The average bound state energy per nucleon is lower than that of a free, unbound nucleon:
