@@ -123,6 +123,8 @@ export const TRANSLATIONS = {
     appTitle: 'Nuclear Energy Valley 3D',
     appSubtitle: 'Specific binding energy (E_bind / A) and nuclear stability surface vs atomic number (Z) and mass number (A)',
     controlsHint: '🎮 Controls: <b>Mouse drag</b> – orbit view | <b>Scroll</b> – zoom | <b>Arrow keys / WASD</b> – traverse space | <b>Click</b> – datasheet | <b>Shift + click</b> – drop atom',
+    linkDocs: '📖 Documentation',
+    tipLinkDocs: 'Open interactive documentation & physics guide',
     jumpFe56: 'Jump to deepest valley floor: 56-Fe',
     jumpNi62: 'Jump to highest specific binding energy: 62-Ni',
     jumpH1: 'Jump to unbound free proton (peak): 1-H',
@@ -232,6 +234,8 @@ export const TRANSLATIONS = {
     appTitle: 'Nukleáris Energiavölgy 3D',
     appSubtitle: 'Fajlagos kötési energia (E_köt / A) és stabilitási test a rendszám (Z) és tömegszám (A) függvényében',
     controlsHint: '🎮 Irányítás: <b>Egér húzás</b> – nézet forgatása | <b>Görgő</b> – zoom | <b>Nyilak / WASD</b> – bejárás a térben | <b>Kattintás</b> – adatlap | <b>Shift + kattintás</b> – ledobás',
+    linkDocs: '📖 Dokumentáció',
+    tipLinkDocs: 'Többnyelvű kereshető dokumentáció és fizikai háttér megnyitása',
     jumpFe56: 'Ugrás a legkötöttebb völgyfenékhez: 56-Fe',
     jumpNi62: 'Ugrás a legmagasabb fajlagos kötési energiájú izotóphoz: 62-Ni',
     jumpH1: 'Ugrás a szabad protonhoz (csúcs): 1-H',
@@ -337,14 +341,14 @@ export const TRANSLATIONS = {
 
 class I18nManager {
   constructor() {
-    let saved = 'en';
+    let saved = 'hu';
     try {
-      saved = localStorage.getItem(STORAGE_KEY) || 'en';
+      saved = localStorage.getItem(STORAGE_KEY) || 'hu';
     } catch (e) {
       // Fallback if localStorage is inaccessible
-      saved = 'en';
+      saved = 'hu';
     }
-    this.currentLang = (saved === 'hu') ? 'hu' : 'en';
+    this.currentLang = (saved === 'en') ? 'en' : 'hu';
     this.listeners = new Set();
   }
 

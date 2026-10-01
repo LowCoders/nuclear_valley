@@ -5,9 +5,13 @@
   "description": "Nukleáris energiavölgy és stabilitási felület 3D WebGL vizualizáció",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "dev:docs": "mkdocs serve",
+    "build": "node scripts/assemble-site.mjs",
+    "build:app": "vite build --outDir dist-app --base ./",
+    "build:docs": "mkdocs build --strict",
     "build:data": "node scripts/build-isotope-data.mjs",
+    "preview": "vite preview",
+    "preview:site": "npx serve site -p 8080",
     "deploy": "bash scripts/deploy.sh"
   },
   "dependencies": {

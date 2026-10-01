@@ -158,6 +158,16 @@ async function bootstrap() {
       if (chipH) chipH.title = i18n.t('jumpH1');
       if (chipU) chipU.title = i18n.t('jumpU235');
 
+      const linkDocs = document.getElementById('link-docs');
+      const textDocs = document.getElementById('text-link-docs');
+      if (linkDocs) {
+        linkDocs.title = i18n.t('tipLinkDocs');
+        linkDocs.href = (lang === 'en') ? '../en/' : '../';
+      }
+      if (textDocs) {
+        textDocs.textContent = i18n.t('linkDocs');
+      }
+
       const btnEn = document.getElementById('btn-lang-en');
       const btnHu = document.getElementById('btn-lang-hu');
       if (btnEn && btnHu) {
